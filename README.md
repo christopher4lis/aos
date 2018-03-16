@@ -56,13 +56,21 @@ From version `2.0.0` attributes `aos` are no longer supported, always use `data-
   <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
 ```
 
+If using a module bundler such as webpack, you'll need appropriate loaders ([style-loader](https://github.com/webpack-contrib/style-loader), [css-loader](https://github.com/webpack-contrib/css-loader)) to import CSS directly into your project:
+```javscript
+import 'aos/dist/aos.css'
+```
+
 ### Add scripts
 
 ```html
   <script src="bower_components/aos/dist/aos.js"></script>
 ```
 
-AOS from version `1.2.0` is available as UMD module, so you can use it as AMD, Global, Node or ES6 module.
+AOS from version `1.2.0` is available as UMD module, so you can use it as AMD, Global, Node or ES6 module:
+```javascript
+import AOS from 'aos'
+```
 
 ### Init AOS
 
